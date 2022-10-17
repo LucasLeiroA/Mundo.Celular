@@ -4,7 +4,7 @@ const cartContext = createContext();
 
 export default function CartContextProvider({ children }) {
   const [cart, setCart] = useState([]);
-
+ 
   function addItem(item, count) {
     if (IsInCart(item.id)) {
       let newCart = cart.map((itemMapeo) => {
@@ -38,7 +38,8 @@ export default function CartContextProvider({ children }) {
   }
   
   function removeItem(itemId){
-
+    
+ 
     let itemFind = cart.findIndex((item)=>item.id === itemId);
         cart.splice(itemFind,1);
         setCart(cart);

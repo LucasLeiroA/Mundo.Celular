@@ -4,6 +4,12 @@
     margin-right: 10vh;
     margin-top: 10vh;
 }
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vh;
+    margin-top: 10vh;
+}
 .btnLimpiar{
     
     border:none;
@@ -14,4 +20,10 @@
     display: flex;
     justify-content: center;
     margin-top: 10vh;
+}
+.btnVolver{
+    display: flex;
+    margin:auto;
+    margin-top: 10vh;
+    
 }

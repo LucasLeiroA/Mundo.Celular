@@ -4,7 +4,7 @@ import {cartContext} from "../../Context/CartContext" ;
 import CartList from './CartList';
 import './CartContainer.css';
 import {createBuyOrder} from "../../Services/firestore";
-import {useNavigate} from "react-router-dom";
+import {useNavigate,Link} from "react-router-dom";
 function CartContainer() {
 
   const {cart, clear , getTotalPriceInCart } = useContext(cartContext);
@@ -14,7 +14,7 @@ function CartContainer() {
 
   function MostrarCart(){
       return(
-        cart.map((item) =>{
+           cart.map((item) =>{
           return (<CartList
             key={item.id}
             id={item.id}
@@ -28,6 +28,8 @@ function CartContainer() {
      
       )
   }
+
+ 
   function handleCheckout(){
     const orderData={
         buyer:{
@@ -51,11 +53,19 @@ function CartContainer() {
         
       }
       {cart.length>=1?
-      <div className='Limpiar'>
-        <button onClick={()=>clear()} className='btnLimpiar'>Limpiar Carrito 🗑️</button>
-        <button onClick={()=>handleCheckout()}>Finalizar Compra</button>
+      <div>
+        <div className='total'>
+        <h1>Total : ${getTotalPriceInCart()} </h1>
+        </div>
+        <div className='Limpiar'>
+          <button onClick={()=>clear()} className='btnLimpiar'>Limpiar Carrito 🗑️</button>
+          <button onClick={()=>handleCheckout()}>Finalizar Compra</button>
+        </div>
       </div>
-      :<div className='cartVacio'>No hay productos en el carrito 🛒!!</div>}
+      :<div >
+        <h1 className='cartVacio' >No hay productos en el carrito 🛒!!</h1>
+        <Link to="/"><button className='btnVolver'>Volver al Inicio</button></Link>  
+      </div>}
       </div>
   )
 }
