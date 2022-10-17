@@ -1,0 +1,14 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}

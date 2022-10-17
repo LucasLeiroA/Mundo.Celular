@@ -1,0 +1,17 @@
+.Limpiar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vh;
+    margin-top: 10vh;
+}
+.btnLimpiar{
+    
+    border:none;
+    background-color: white;
+    
+}
+.cartVacio{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}

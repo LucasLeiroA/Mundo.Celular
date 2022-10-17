@@ -1,0 +1,31 @@
+
+.container{
+    margin: 0px;
+}
+
+.btns{
+    background-color: gray;
+    border:none;
+    padding: 0px;
+    margin: 0px;
+}
+.btns:hover{
+    background-color: rgb(53, 108, 190);
+    color:black;
+}
+.btnAgregar:hover{
+    background-color: rgb(53, 108, 190);
+    color:black;
+}
+.btnAgregar{
+    background-color: gray;
+    border:none;
+    margin-bottom: 10px;
+}
+.btn-check:focus+.btn, .btn:focus {
+    color: var(--bs-btn-hover-color);
+    background-color: gray !important ;
+    border-color: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}

@@ -1,0 +1,45 @@
+.carusel img{
+      height: 30vh !important;
+       margin: auto;    
+}
+
+.precio{
+    font-size: 22px;
+    font-weight: 100;
+}
+.precio span{
+    font-weight: bold;
+}
+.titulo{
+    color: black; 
+    font-size: 22px;
+    font-weight: 100;
+}
+.cont{
+    height: 60vh;
+}
+.btn{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.btn:hover{
+   color: black  !important;
+   
+}
+.card:hover{
+    box-shadow: 5px 5px 20px;
+    transform: translatey(3%);
+}
+
+a{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}

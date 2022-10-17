@@ -1,0 +1,31 @@
+.carusel img{
+  height: 70vh;
+  margin: auto;
+}
+.cant{
+
+    display: flex;
+    flex-direction: row;  
+    width: 70%;  
+    margin: auto;
+    margin-top: 4vh;
+}
+.section1{
+    width: 80%;
+}
+.section2{
+    width: 30%;
+}
+.des{
+    max-height: 40vh;
+    overflow: scroll;
+}
+.linkCarrito{
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    border: none;
+    margin-top: 3vh;
+    background-color: white;
+    font-size: 20px;
+}
