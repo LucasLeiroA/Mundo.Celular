@@ -1,0 +1,27 @@
+.contene{
+    width: 100%;
+    height: 100%;
+}
+
+.fr-container{
+    border-radius: 2% ;
+    height: 60vh;
+    width: 50vh;
+    display: flex;
+    margin: auto;
+
+    margin-top: 10vh;
+}
+
+.contene form{
+    width: 100%;
+}
+.fr-item{
+   width: 100%;
+   margin:0px 0px 10vh 0px;
+}
+
+.fr-item label{
+    width: 30%; 
+}
+

@@ -1,5 +1,5 @@
 import React from 'react'
-import {useParams} from "react-router-dom";
+import {useParams , Link} from "react-router-dom";
  function Checkout() {
 
     let { orderid } = useParams();
@@ -8,8 +8,10 @@ import {useParams} from "react-router-dom";
     <div>
         <h2>Gracias por tu Compra</h2>
         <h2>{orderid}</h2>
+        <Link to="/"><button>Volver al inicio</button></Link>
+        
     </div>
-    //mostrart un detalle de la cuenta con el id
+    //mostrart un DETALLE DE LA ORDEN AUTOGENERADA
   )
 }
 
