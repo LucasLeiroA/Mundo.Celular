@@ -13,7 +13,7 @@ function CheckoutForm() {
 
   const navigate = useNavigate();
   useContext(cartContext);
-  const { cart, getTotalPriceInCart } = useContext(cartContext);
+  const { cart, getTotalPriceInCart , clear } = useContext(cartContext);
 
   function handleCheckout(event) {
     event.preventDefault();
@@ -39,6 +39,7 @@ function CheckoutForm() {
   }
 
   return (
+
 <div className="contene">
 <div className="fr-container">
       <form  onSubmit={handleCheckout}>
@@ -77,7 +78,11 @@ function CheckoutForm() {
             required
           />
         </div>
-        <button className="fr-item" type="submit">Finalizar Compra</button>
+        <div className="total-precio">
+          <h3>Total:</h3>
+          <h3 >{getTotalPriceInCart()}</h3>
+        </div>
+        <button onClick={()=>clear()} className="fr-item" type="submit">Finalizar Compra</button>
       </form>
     </div>
 </div>

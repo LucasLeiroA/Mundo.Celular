@@ -8,6 +8,9 @@ function CartWidget() {
 
   const {  getTotalItemsInCart } = useContext(cartContext);
 
+ 
+  
+
   return (
     <div>
         { 

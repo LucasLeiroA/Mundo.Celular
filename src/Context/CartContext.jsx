@@ -37,17 +37,12 @@ export default function CartContextProvider({ children }) {
     setCart([]);
   }
   
-  function removeItem(itemId){
-    
- 
-    let itemFind = cart.findIndex((item)=>item.id === itemId);
-        cart.splice(itemFind,1);
-        setCart(cart);
-               
-  }
+  function deleteItem(id) {
+    return setCart(cart.filter(product => product.id !== id))
+}
  
   function getTotalPriceInCart() {
-    let total = 0;
+     let total = 0;
     cart.forEach((item) => (total += item.count * item.price));
     return total;
   }
@@ -55,7 +50,7 @@ export default function CartContextProvider({ children }) {
   
 
   return (
-    <cartContext.Provider value={{ cart, addItem, getTotalItemsInCart, clear,removeItem,getTotalPriceInCart }}>
+    <cartContext.Provider value={{ cart, addItem, getTotalItemsInCart, clear,deleteItem,getTotalPriceInCart}}>
       {children}
     </cartContext.Provider>
   );

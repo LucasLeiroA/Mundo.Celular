@@ -7,9 +7,9 @@ import {cartContext} from "../../Context/CartContext"
 import { useContext } from 'react';
 function CartList(props) {
 
-   let {  removeItem } = useContext(cartContext)
+   let {  deleteItem } = useContext(cartContext)
 
-    let { img1,tittle , count , price , stock,id } = props;
+    let { img1,tittle , count , price , stock, id } = props;
 
     const [cantidad, setCantidad] = useState(count);
 
@@ -56,7 +56,7 @@ function CartList(props) {
                 <h2 className='cantidad'>{cantidad}</h2>    
                 <button className='btna' onClick={()=>incrementarCount()}>+</button> 
             </div>
-            <button key={id} onClick={()=>removeItem(id)} className='btnEliminar'><FontAwesomeIcon icon={faTrashCan} /> </button>      
+            <button key={id} onClick={()=>deleteItem(id)} className='btnEliminar'><FontAwesomeIcon icon={faTrashCan} /> </button>      
             <h2>${price * cantidad}</h2>
          
         </div>

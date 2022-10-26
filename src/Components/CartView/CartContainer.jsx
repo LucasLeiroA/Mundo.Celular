@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 function CartContainer() {
 
   const {cart, clear , getTotalPriceInCart } = useContext(cartContext);
+ 
   
 
   function MostrarCart(){
@@ -21,12 +22,18 @@ function CartContainer() {
             img1={item.img1}
             count={item.count}
             stock={item.stock}
-            />)})
+            /> 
+             )})
      
       )
   }
 
- 
+
+
+
+
+
+
 
 
   return (
@@ -38,7 +45,7 @@ function CartContainer() {
       {cart.length>=1?
       <div>
         <div className='total'>
-        <h1>Total : ${getTotalPriceInCart()} </h1>
+        <h1>Total : ${getTotalPriceInCart()}</h1>
         </div>
         <div className='Limpiar'>
           <button onClick={()=>clear()} className='btnLimpiar'>Limpiar Carrito 🗑️</button>

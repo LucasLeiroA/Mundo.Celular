@@ -24,4 +24,9 @@
 .fr-item label{
     width: 30%; 
 }
+.total-precio{
+   display: flex;
+   justify-content: space-around;
+   margin: 2vh 0px 2vh 0px;
+}
 
