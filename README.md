@@ -21,9 +21,15 @@ Utilice hooks de react para la funcionalidad (useState, useParams, useEffect, Re
 Y librerias externas como bootstrap, Aos y SweetAlert2 para darle un poco mas de estilo.
 
 Installation
+
 Clone the repo
-git clone https://github.com/AlexanderWindecker/reactjs-windecker.git
-Install NPM packages
+
+git clone https://github.com/LucasLeiroA/Mundo.Celular
+
+Install NPM packages:
+
 npm install
-Run the APP
+
+Run the APP:
+
 npm start;
