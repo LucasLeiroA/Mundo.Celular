@@ -9,12 +9,15 @@
     width: 50vh;
     display: flex;
     margin: auto;
-
     margin-top: 10vh;
 }
 
 .contene form{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .fr-item{
    width: 100%;
@@ -22,11 +25,18 @@
 }
 
 .fr-item label{
-    width: 30%; 
+    width: 50%; 
 }
 .total-precio{
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    margin: 2vh 0px 2vh 0px;
 }
 
+.title-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    font-size: 25px;
+    font-weight: bold;
+}

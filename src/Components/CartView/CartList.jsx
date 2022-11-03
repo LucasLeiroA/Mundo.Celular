@@ -1,47 +1,17 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './CartList.css';
-import Swal from 'sweetalert2'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import {cartContext} from "../../Context/CartContext"
 import { useContext } from 'react';
+
 function CartList(props) {
 
-   let {  deleteItem } = useContext(cartContext)
+   let {  deleteItem  } = useContext(cartContext)
 
-    let { img1,tittle , count , price , stock, id } = props;
-
-    const [cantidad, setCantidad] = useState(count);
+    let { img1,tittle , count , price ,  id } = props;
 
 
-    function incrementarCount(){
-        if (cantidad < stock) {
-            setCantidad(cantidad + 1);    
-        }else{
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'No hay tanta cantidad en stock',
-              })
-            
-        }
-    }
-
-    function decrementarCount(){
-        if (cantidad>1) {
-            setCantidad(cantidad - 1);
-            
-        }else{
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'No puede ingresar un valor menor a 1',
-              })
-        }
-    }
-
-    
-    
   
 
 
@@ -52,12 +22,12 @@ function CartList(props) {
             
             <h1 className='tittle'>{tittle}</h1>
             <div className='contBtns'>
-                <button className='btna' onClick={()=>decrementarCount()}>-</button>
-                <h2 className='cantidad'>{cantidad}</h2>    
-                <button className='btna' onClick={()=>incrementarCount()}>+</button> 
+
+                <h2 className='cantidad'>Cantidad:{count}</h2>    
+         
             </div>
             <button key={id} onClick={()=>deleteItem(id)} className='btnEliminar'><FontAwesomeIcon icon={faTrashCan} /> </button>      
-            <h2>${price * cantidad}</h2>
+            <h2>${price * count}</h2>
          
         </div>
              

@@ -8,6 +8,8 @@ import CartContainer from "./Components/CartView/CartContainer";
 import CartContextProvider from "./Context/CartContext";
 import Checkout from "./Components/Checkout/Checkout";
 import CheckoutForm from "./Components/CheckoutForm/CheckoutForm";
+import Info from "./Components/QuienesSomos/Info";
+
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
           <Route path="/checkoutForm" element={<CheckoutForm/>}/>
           <Route path="/checkout/:orderid" element={<Checkout/>}/> 
           <Route path="*" element={<h1>Te perdiste</h1>}/>
+          <Route path="/quinesSomos!" element={<Info/>}/>
         </Routes>
       </BrowserRouter>
       </CartContextProvider>

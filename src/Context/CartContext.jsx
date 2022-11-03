@@ -47,6 +47,8 @@ export default function CartContextProvider({ children }) {
     return total;
   }
 
+
+
   
 
   return (

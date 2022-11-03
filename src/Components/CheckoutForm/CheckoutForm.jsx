@@ -41,6 +41,7 @@ function CheckoutForm() {
   return (
 
 <div className="contene">
+  <h2 className="title-form">Datos de Compra</h2>
 <div className="fr-container">
       <form  onSubmit={handleCheckout}>
         <div className="fr-item">

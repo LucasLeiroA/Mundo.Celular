@@ -1,0 +1,38 @@
+.cont-3{
+    height: 90vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cont-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+
+
+.redes-sociales{
+    margin-top: 10vh;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.red-sol{
+    padding: 3vh;
+    width: 20px;
+    height: 20px;
+}
+.pa1{
+    margin-top: 3vh;
+    width: 60%;
+}
+.pa2{
+    width: 60%;
+}

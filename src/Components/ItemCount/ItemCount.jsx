@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 function ItemCount(props) {
 
-    let {stock , img , initial ,tittle,onAdd} = props;
+    let {  stock , img , initial ,tittle,onAdd} = props;
     
     
     

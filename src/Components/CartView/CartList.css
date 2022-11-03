@@ -22,10 +22,7 @@
     align-items: center;
     justify-items: center;
 }
-.contBtns{
-    display: flex;
-    border: 1px solid #e6e6e6; 
-}
+
 .cantidad{
     display: flex;
     align-items: center;

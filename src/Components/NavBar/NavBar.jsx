@@ -9,8 +9,9 @@ function NavBar() {
   return (
     <Navbar className="barra">
       <Container className="contenedor">
+      
         <Link className="logo" to="/">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#home"> 
             <img src="/logocel2.png" alt="" />
           </Navbar.Brand>
         </Link>
@@ -24,7 +25,7 @@ function NavBar() {
           <Link to="/categoria/funda">
             <Nav.Link href="#pricing">Fundas</Nav.Link>
           </Link>
-          <Link>
+          <Link to="/quinesSomos!"> 
             <Nav.Link className="btn-n1" href="#pricing">
               Quienes Somos!
             </Nav.Link>
@@ -32,26 +33,14 @@ function NavBar() {
           <Link to="/cart">
             <Nav.Link className="carrito" href="#cart">
               <CartWidget />
-            </Nav.Link>{" "}
+            </Nav.Link>{" "}  
+
           </Link>
         </Nav>
       </Container>
     </Navbar>
 
-    // <nav className='container'>
-    //   <div className='logo'>
-    //     <img src="/logocel2.png" alt="" />
-    //   </div>
-    //   <div className='nav-bar'>
-    //     <ol>
-    //       <ul>Celulares</ul>
-    //       <ul>Accesorios</ul>
-    //       <ul>Fundas</ul>
-    //       <ul>Quienes Somos!</ul>
-    //       <ul><CartWidget/></ul>
-    //     </ol>
-    //   </div>
-    // </nav>
+
   );
 }
 
